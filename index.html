@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/default-theme.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>jQuery Practical Examples</title>
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <ul class="navbar">
+      <li><a href="#" data-scroll="home">Home</a></li>
+      <li><a href="#" data-scroll="about-us">About Us</a></li>
+      <li><a href="#" data-scroll="services">Services</a></li>
+      <li><a href="#" data-scroll="solutions">Solutions</a></li>
+      <li><a href="#" data-scroll="products">Products</a></li>
+      <li><a href="#" data-scroll="contact-us">Contact Us</a></li>
+    </ul>
+    <!-- End Navbar -->
+    <!-- Start Fixed Menu -->
+    <div class="fixed-menu">
+      <i class="fas fa-cog fa-3x gear-check"></i>
+      <h3>Change Color</h3>
+      <ul class="change-colors">
+        <li data-color="red"></li>
+        <li data-color="blue"></li>
+        <li data-color="purple"></li>
+        <li data-color="green"></li>
+      </ul>
+      <h3>Important Links</h3>
+      Testing Links
+    </div>
+    <!-- End Fixed Menu -->
+    <!-- Start Sections -->
+    <div id="home" class="block">
+      <h2>Home</h2>
+      <!-- Start Popups -->
+      <div class="popups">
+        <span class="show-popup" data-popup=".first-popup">Show 1st Popup</span>
+        <span class="show-popup" data-popup=".second-popup"
+          >Show 2nd Popup</span
+        >
+      </div>
+      <!-- End Popups -->
+      <!-- Start Error Message -->
+      <div class="error-message">
+        This is Error Message, Please Try agian Later
+      </div>
+      <!-- End Error Message -->
+      <!-- Start Buttons With Effects -->
+      <div class="buttons-effects">
+        <button class="buttons-effect from-left">
+          <span>From Left</span>
+        </button>
+        <button class="buttons-effect from-top">
+          <span>From Top</span>
+        </button>
+        <button class="buttons-effect border-from-left">
+          <span>Border From Left</span>
+        </button>
+        <button class="buttons-effect border-from-top" class="border-from-top2">
+          <span class="border-bottom"></span>
+          <span>Border From Top</span>
+        </button>
+      </div>
+      <div class="buttons-effects">
+        <button class="buttons-effect bounce bounce-one">Bounce Once</button>
+        <button class="buttons-effect bounce bounce-two">Bounce Twice</button>
+        <button class="buttons-effect bounce bounce-three">
+          Bounce Triple
+        </button>
+      </div>
+      <!-- End Buttons With Effects -->
+      <!-- Start Progress Bar -->
+      <div class="animated-progress p-red">
+        <span data-progress="25%"></span>
+      </div>
+      <div class="animated-progress p-blue">
+        <span data-progress="50%"></span>
+      </div>
+      <div class="animated-progress p-purple">
+        <span data-progress="75%"></span>
+      </div>
+      <div class="animated-progress p-green">
+        <span data-progress="100%"></span>
+      </div>
+      <!-- End Progress Bar -->
+      <!-- Start Gallery -->
+      <div class="gallery">
+        <div class="main-img">
+          <i class="skin-background fa fa-chevron-left fa-2x"></i>
+          <i class="skin-background fa fa-chevron-right fa-2x"></i>
+          <img src="img/fruit_01.jpg" alt="pineapple" />
+        </div>
+        <div class="thumbnails">
+          <img class="selected" src="img/fruit_01.jpg" alt="pineapple" />
+          <img src="img/fruit_02.jpg" alt="blueberry" />
+          <img src="img/fruit_03.jpg" alt="watermalon" />
+          <img src="img/fruit_04.jpg" alt="blue-banana" />
+          <img src="img/fruit_05.jpg" alt="orange" />
+        </div>
+      </div>
+      <!-- End Gallery -->
+      <!-- Start Products -->
+      <div class="products">
+        <div class="product">
+          <h3>Product One</h3>
+          <span class="data">1/8/2022</span>
+          <img src="https://via.placeholder.com/100" alt="" />
+          <i class="fa fa-plus fa-lg"></i>
+          <p class="desc">This is Test Description</p>
+        </div>
+        <div class="product">
+          <h3>Product Two</h3>
+          <span class="data">2/8/2022</span>
+          <img src="https://via.placeholder.com/100" alt="" />
+          <i class="fa fa-plus fa-lg"></i>
+          <p class="desc">This is Test Description</p>
+        </div>
+      </div>
+      <!-- End Products -->
+      <!-- Start List/Grid Products -->
+      <div class="items list-view">
+        <div class="view-options">
+          <i class="active fa fa-list fa-fw fa-2x" data-class="list-view"></i>
+          <i class="fa fa-th-large fa-fw fa-2x" data-class="grid-view"></i>
+        </div>
+        <div class="item first">
+          <h3>Item One</h3>
+          <span class="data">3/8/2022</span>
+          <img src="https://via.placeholder.com/100" alt="" />
+          <i class="fa fa-plus fa-lg"></i>
+          <p class="desc">This is Test Description</p>
+        </div>
+        <div class="item">
+          <h3>Item Two</h3>
+          <span class="data">3/8/2022</span>
+          <img src="https://via.placeholder.com/100" alt="" />
+          <i class="fa fa-plus fa-lg"></i>
+          <p class="desc">This is Test Description</p>
+        </div>
+      </div>
+      <!-- End List/Grid Products -->
+      <!-- Start Our Form -->
+      <div class="our-form">
+        <form>
+          <div>
+            <input
+              class="auto-direction"
+              class="detect-unicode"
+              type="text"
+              required="required"
+              placeholder="Type Your Name"
+            />
+            <span class="the-message">Please Fill This Feild</span>
+            <div class="unicode"></div>
+          </div>
+          <div>
+            <input
+              class="auto-direction"
+              type="email"
+              required="required"
+              placeholder="Type Your Email"
+            />
+            <span class="the-message">Please Fill This Feild</span>
+          </div>
+          <div>
+            <input
+              type="password"
+              required="required"
+              placeholder="Type Your Password"
+            />
+            <span class="the-message">Please Fill This Feild</span>
+          </div>
+          <div>
+            <textarea
+              required="required"
+              placeholder="Type Your Message"
+            ></textarea>
+            <span class="the-message">Please Fill This Feild</span>
+          </div>
+          <div>
+            <input
+              class="add-tag"
+              type="text"
+              placeholder="Type Your Tages then Press [,]"
+            />
+            <div class="tags"></div>
+          </div>
+          <div>
+            <input type="file" />
+          </div>
+          <input type="submit" value="Send" />
+        </form>
+      </div>
+      <!-- End Our Form -->
+      <!-- Start Trimmed Text -->
+      <div class="trimmed-texts">
+        <p class="p-one">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
+          exercitationem libero recusandae laborum, eum, quae nam repellendus
+          beatae nostrum et voluptatum! Aperiam dolor nobis ipsum, harum
+          expedita molestiae eius sit, exercitationem voluptatem iure minus ut
+          illum vero vel assumenda! Cupiditate cum adipisci corporis
+          perspiciatis laborum minima quam veniam vero illo.
+        </p>
+        <p class="p-two">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
+          exercitationem libero recusandae laborum, eum, quae nam repellendus
+          beatae nostrum et voluptatum! Aperiam dolor nobis ipsum, harum
+          expedita molestiae eius sit, exercitationem voluptatem iure minus ut
+          illum vero vel assumenda! Cupiditate cum adipisci corporis
+          perspiciatis laborum minima quam veniam vero illo.
+        </p>
+        <p class="p-three">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
+          exercitationem libero recusandae laborum, eum, quae nam repellendus
+          beatae nostrum et voluptatum! Aperiam dolor nobis ipsum, harum
+          expedita molestiae eius sit, exercitationem voluptatem iure minus ut
+          illum vero vel assumenda! Cupiditate cum adipisci corporis
+          perspiciatis laborum minima quam veniam vero illo.
+        </p>
+      </div>
+      <!-- End Trimmed Text -->
+      <!-- Start Same Height Divs -->
+      <div class="container same-height">
+        <div class="one">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil,
+          quisquam?
+        </div>
+        <div class="two">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          velit odit deleniti consectetur eius modi iste natus. Voluptas
+          doloremque, nesciunt quia recusandae placeat aut deserunt!
+        </div>
+        <div class="three">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea
+          voluptatibus dolorum possimus sapiente dolor magni dolores libero
+          ipsam incidunt rerum! Maiores harum obcaecati architecto odit. Nam
+          dolore perspiciatis rem quo perferendis. Quisquam, dolorem impedit vel
+          laboriosam quos explicabo non distinctio.
+        </div>
+      </div>
+      <!-- End Same Height Divs -->
+      <!-- Start Shuffling Cards -->
+      <div class="container">
+        <div class="cards">
+          <div class="card card-one"></div>
+          <div class="card card-two"></div>
+          <div class="card card-three"></div>
+          <div class="card card-four"></div>
+          <div class="card card-five"></div>
+          <div class="card card-six"></div>
+          <div class="card card-seven"></div>
+          <div class="card card-eight"></div>
+        </div>
+      </div>
+      <!-- End Shuffling Cards -->
+      <!-- Start Blink Warning -->
+      <div class="container">
+        <h3 class="blink-warning">This is Warning</h3>
+      </div>
+      <!-- End Blink Warning -->
+      <!-- Start To Do List -->
+      <div class="container">
+        <div class="to-do-list">
+          <h3>To Do List</h3>
+          <ul class="tasks">
+            <li>Finishing jQuery Course</li>
+            <li>learning The New JS Framework</li>
+            <li>Leaving Alone!</li>
+          </ul>
+          <form class="add-task" method="post">
+            <input
+              class="task-input"
+              type="text"
+              name="task"
+              placeholder="Add New Task"
+            />
+          </form>
+        </div>
+      </div>
+      <!-- End To Do List -->
+      <!-- Start Typewriting Effects -->
+      <div class="container typewriting">
+        <p
+          class="typer"
+          data-text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,ipsam."
+        ></p>
+      </div>
+      <!-- End Typewriting Effects -->
+      <!-- Start Summary Table -->
+      <div class="container">
+        <table class="summary">
+          <tr>
+            <td>Name</td>
+            <td>Value</td>
+            <td>Price</td>
+          </tr>
+          <tr>
+            <td>Data One</td>
+            <td>10 Items</td>
+            <td class="price">100</td>
+          </tr>
+          <tr>
+            <td>Data Two</td>
+            <td>5 Items</td>
+            <td class="price">80</td>
+          </tr>
+          <tr>
+            <td>Data Three</td>
+            <td>1 Items</td>
+            <td class="price">20</td>
+          </tr>
+          <tr>
+            <td>Data Four</td>
+            <td>20 Items</td>
+            <td class="price">200</td>
+          </tr>
+          <tr>
+            <td>Data Five</td>
+            <td>2 Items</td>
+            <td class="price">28</td>
+          </tr>
+          <td colspan="2">Total:</td>
+          <td class="the-total"></td>
+          </tr>
+        </table>
+      </div>
+      <!-- End Summary Table -->
+      <!-- Start Auto Change Notes -->
+      <div class="container">
+        <div class="text-ticker">
+          <h3>Today Notes</h3>
+          <ul class="ticker-list">
+            <li class="active">This is Line Number 1 To Test</li>
+            <li >This is Line Number 2 To Test</li>
+            <li>This is Line Number 3 To Test</li>
+            <li>This is Line Number 4 To Test</li>
+            <li>This is Line Number 5 To Test</li>
+            <li>This is Line Number 6 To Test</li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Auto Change Notes -->
+      <!-- Start Dynamic tabs -->
+      <div class="container">
+        <span class="switch-tabs">Switch Tabs</span>
+        <div class="dynamic-tabs">
+          <ul class="tabs-list">
+            <li class="active" data-content=".content-one">One</li>
+            <li data-content=".content-two">Two</li>
+            <li data-content=".content-three">Three</li>
+            <li data-content=".content-four">Four</li>
+            <li data-content=".content-five">Five</li>
+          </ul>
+          <div class="content-list">
+            <div class="content-one">This is Content Number One</div>
+            <div class="content-two">This is Content Number Two</div>
+            <div class="content-three">This is Content Number Three</div>
+            <div class="content-four">This is Content Number Four</div>
+            <div class="content-five">This is Content Number Five</div>
+          </div>
+        </div>
+      </div>
+      <!-- End Dynamic tabs -->
+      <!-- Start Email Suggest Box -->
+      <div class="container">
+        <form>
+          <input class="email-suggest" type="email" name="email" autocomplete="off" placeholder="Type Your Email">
+        </form>
+      </div>
+      <!-- End Email Suggest Box -->
+    <!-- Start jQuery Pracitcal Examples Course 2 -->
+    <ul class="new-examples">
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+    </ul>
+    <!-- Start Calculate Textarea Remaining Characters -->
+    <div class="textarea-div">
+      <textarea id="our-field" cols="50" rows="10" maxlength="100"></textarea>
+      <div class="textarea-message"></div>
+    </div>
+    <!-- End Calculate Textarea Remaining Characters -->
+    <!-- Start Convert Password Field To Text Field -->
+    <div class="password">
+      <input class="pass" type="password" name="password">
+      <button class="pass">Show Password</button>
+    </div>
+    <!-- End Convert Password Field To Text Field -->
+    <!-- Start Countdown -->
+    <div class="container countdown">
+      22 
+    </div>
+    <!-- End Countdown -->
+    <!-- Start Infinity Animation Function -->
+    <div class="offer">
+      <img src="/img/click-here.png" alt="">
+      This is our Offer
+    </div>
+    <!-- End Infinity Animation Function -->
+    <!-- Start Generate Options inside Select Box -->
+    <select name="years" id="years">
+      <option value="x">Choose Year</option>
+    </select>
+    <!-- End Generate Options inside Select Box -->
+    <!-- Start Horizontal Accordion Slider -->
+    <section class="accordion">
+      <div class="accordion-item">
+        Item
+      </div>
+      <div class="accordion-info">
+        Info
+      </div>
+      <div class="accordion-item">
+        Item
+      </div>
+      <div class="accordion-info">
+        Info
+      </div>
+      <div class="accordion-item">
+        Item
+      </div>
+      <div class="accordion-info">
+        Info
+      </div>
+      <div class="accordion-item">
+        Item
+      </div>
+      <div class="accordion-info">
+        Info
+      </div>
+      <div class="accordion-item">
+        Item
+      </div>
+      <div class="accordion-info">
+        Info
+      </div>
+    </section>
+    <!-- End Horizontal Accordion Slider -->
+    <!-- Start Switch Between Styles -->
+    <article>
+      <button value="default-theme" class="default">Default</button>
+      <button value="dark-theme" class="dark">Dark</button>
+      <header>
+        <h2>Article Name</h2>
+        <p>This is Article Info</p>
+      </header>
+      <section>
+        This is Article Content
+      </section>
+    </article>
+    <!-- End Switch Between Styles -->
+    <!-- Start jQuery Accordion -->
+    <section class="jquery-accordion">
+      <h3>First Content</h3>
+      <div>Content Num 1</div>
+      <h3>Second Content</h3>
+      <div>Content Num 2</div>
+      <h3>Third Content</h3>
+      <div>Content Num 3</div>
+      <h3>Fourth Content</h3>
+      <div>Content Num 4</div>
+      <h3>Fifth Content</h3>
+      <div>Content Num 5</div>
+    </section>
+    <!-- End jQuery Accordion -->
+    <!-- End jQuery Pracitcal Examples Course 2 -->
+    </div>
+    <div id="about-us" class="block">
+      <h2>About Us</h2>
+      <!-- Start jQuery Pracitcal Examples Course 2 -->
+      <!-- Start Color Plugin -->
+      <div class="color-plugin">
+        <div class="our-test">This is Test For 2nd Course</div>
+        <div class="our-test2">This is Test 2 For 2nd Course</div>
+      </div>
+      <!-- End Color Plugin -->
+      <!-- Start jQuery Pracitcal Examples Course 2 -->
+    </div>
+    <div id="services" class="block">
+      <h2>Services</h2>
+    </div>
+    <div id="solutions" class="block">
+      <h2>Solutions</h2>
+    </div>
+    <div id="products" class="block">
+      <h2>Products</h2>
+    </div>
+    <div id="contact-us" class="block">
+      <h2>Contact-us</h2>
+    </div>
+    <!-- End Sections -->
+    <!-- Start Scroll To Top -->
+    <a class="scroll-button" href="">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+    <!-- End Scroll To Top -->
+    <!-- Start Popup -->
+    <div class="popup first-popup">
+      <div class="inner">
+        <h3>This is 1st Popup for Course</h3>
+        <p>
+          I Don't Like Popup Ads Either But, I Did It For Learning From jQuery
+          Coures So, I' Sorry BTW
+        </p>
+        <button class="close">Close</button>
+      </div>
+    </div>
+    <div class="popup second-popup">
+      <div class="inner">
+        <h3>This is 2nd Popup for Course</h3>
+        <p>
+          I Don't Like Popup Ads Either But, I Did It For Learning From jQuery
+          Coures So, I' Sorry BTW
+        </p>
+        <button class="close">Close</button>
+      </div>
+    </div>
+    <!-- End Popup -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
